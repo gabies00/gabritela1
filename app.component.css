@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Estilos do Header */
+.header {
+  background-color: #edb1bf; /* Cor vibrante */
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 38px;
+  color: white;
+  font-weight: 600;
+}
+
+/* Navegação */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.nav-menu ul li {
+  margin: 0 20px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-menu ul li a:hover {
+  color: #f9f9f9;
+}
+
+/* Tipos de receitas */
+.recipe-types {
+  margin: 40px 10%;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px 
+}
+
+.recipe-types h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #625b5b
+}
+
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.recipe-item {
+  background-color: #e6e6e6;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.recipe-item:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Texto de boas-vindas */
+.welcome-text {
+  margin: 40px auto;
+  padding: 25px;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(85, 9, 9, 0.1);
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.welcome-text p {
+  margin-bottom: 15px;
+}
+
+/* Estilos para o rodapé */
+.footer {
+  background-color: #625b5b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .recipe-types {
+    margin: 30px 5%;
+  }
+
+  .welcome-text {
+    margin: 20px;
+    padding: 15px;
+  }
+}
+
+/* Estilos adicionais */
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding-bottom: 60px; /* Adiciona um padding extra para o conteúdo não ficar embaixo do rodapé */
+  background-color: #f7f7f7; /* Cor de fundo mais suave */
+  color: #333; /* Cor do texto mais escura para melhorar o contraste */
+}
+
+li, a {
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.5px; /* Aumenta o espaçamento entre letras */
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #350a34;
+  position: fixed;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombras mais suaves */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 10px 20px; /* Adiciona padding para o header ficar mais espaçoso */
+}
+
+.logo {
+  margin-right: auto;
+  color: #ebf0f0;
+  font-size: 24px; /* Tamanho maior para o logo */
+  font-weight: 700;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu li {
+  padding: 0 20px;
+}
+
+.nav-menu li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  transition: all 0.3s ease;
+  padding: 10px 15px; /* Adiciona padding nos itens do menu */
+  border-radius: 8px; /* Bordas arredondadas para o efeito de hover */
+}
+
+/* Estilo do conteúdo principal */
+main {
+  padding: 20px;
+  margin-top: 80px; /* Espaço acima para o header fixo não cobrir o conteúdo */
+}
+
+main p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+main p:first-child {
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+/* Seção dos tipos de receitas */
+.recipe-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.recipe-item {
+  padding: 20px;
+  border-radius: 8px; /* Bordas arredondadas */
+  background-color:#edb1bf ; /* Fundo roxo */
+  color: white; /* Cor do texto */
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.recipe-item:hover {
+  background-color: #350a34 ; /* Cor de fundo mais escura ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento de tamanho ao passar o mouse */
+}
+
+/* Footer fixo */
+footer {
+  display: flex;
+  color: white;
+  background-color: #edb1bf;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 20px; /* Adiciona padding no footer */
+}
+
+footer p {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-menu {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-menu li {
+    padding: 10px 0;
+  }
+
+  .nav-menu li a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 18px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}

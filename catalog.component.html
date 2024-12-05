@@ -1,0 +1,73 @@
+<div>
+  <app-search-catalog></app-search-catalog>
+</div>
+
+<div class="container-c">
+  <h2 class="catalog-title">Receitas</h2>
+
+  <!-- Tabela de categoria -->
+  <div class="tab-container">
+    <div class="tab-buttons">
+      <button
+        *ngFor="let tab of tabs"
+        class="tab-btn"
+        [class.active]="tab.active"
+        (click)="tabClicked(tab)"
+        [attr.content-id]="tab.id"
+      >
+        {{ tab.label }}
+      </button>
+    </div>
+  </div>
+  
+  <nav>
+    <ul class="card-grid">
+      <li *ngFor="let recipe of paginatedRecipes" class="card">
+        <a (click)="navigateToDetails(recipe.id)" class="content"> <!-- Altere o link para o click handler -->
+
+          <div class="front">
+            <div class="img">
+              <img
+                [src]="recipe.image"
+                alt="Imagem da Receita"
+                class="card-img-top"
+              />
+            </div>
+
+            <div class="front-content">
+              <small class="badge">Categoria: {{ recipe.category }}</small>
+              <div class="description">
+                <div class="title">
+                  <p class="title">
+                    <strong>{{ recipe.title }}</strong>
+                  </p>
+                </div>
+                <p class="card-footer">
+                  {{ recipe.cookingTime }} Mins &nbsp; | &nbsp;
+                  {{ recipe.serving }} Serving
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Navegação de página -->
+  <div class="pagination">
+    <button
+      (click)="goToPage(currentPage - 1)"
+      [disabled]="currentPage === 1"
+    >
+      <
+    </button>
+    <span>{{ currentPage }} de {{ totalPages }}</span>
+    <button
+      (click)="goToPage(currentPage + 1)"
+      [disabled]="currentPage === totalPages"
+    >
+      >
+    </button>
+  </div>
+</div>

@@ -1,0 +1,183 @@
+/* Container Principal */
+.container-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 1200px; /* Limita o tamanho máximo do container */
+  margin: 0 auto; /* Centraliza o container */
+}
+
+/* Título do Catálogo */
+.catalog-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Categorias */
+.tab-container {
+  background-color: #f3f3f3;
+  padding: 10px;
+  width: 100%;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 5px;
+  justify-content: center; /* Centraliza as abas */
+}
+
+.tab-btn {
+  width: 100%;
+  border: none;
+  color: #020617;
+  background-color: #f3f3f3;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+:host ::ng-deep .tab-btn {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tab-btn.active {
+  background-color: #350a34;
+  color: white;
+}
+
+.tab-btn:hover {
+  background-color: #350a34;
+  color: white;
+}
+
+/* Grid de Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/* Responsividade do Grid */
+@media (max-width: 1200px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: 1fr; /* Coloca um card por linha em telas pequenas */
+  }
+}
+
+/* Cards */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.front-content {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.badge {
+  font-size: 0.875rem;
+  color: #fff;
+  background-color: #350a34;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.description .title {
+  margin-bottom: 10px;
+}
+
+.card-footer {
+  font-size: 0.875rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Paginação */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #350a34;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 100%;
+}
+
+.pagination button:disabled {
+  background-color: #dfdfdf;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+/* Melhorar a separação das páginas */
+.page-section {
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #ccc;
+}

@@ -1,0 +1,11 @@
+<h1>Receitas</h1>
+
+<div *ngIf="receitas.length === 0">
+  <p>Carregando receitas...</p>
+</div>
+
+<div *ngFor="let receita of receitas">
+  <h2>{{ receita.title }}</h2>
+  <img [src]="receita.image" alt="{{ receita.title }}" width="200" />
+  <p>{{ receita.summary }}</p>
+</div>

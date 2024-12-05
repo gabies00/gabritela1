@@ -1,0 +1,129 @@
+
+.details {
+    background-color: #f9f9f9; /* Cor de fundo branca */
+    padding: 100px; /* Aumentei o padding para dar mais espaço interno */
+    margin-top: 80px; /* Para garantir que o conteúdo não sobreponha o cabeçalho fixo */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombras para o fundo */
+    width: 100%; /* Faz o fundo branco ocupar toda a largura */
+    max-width: 1500px; /* Tamanho máximo para garantir que não ultrapasse o limite */
+    margin-left: 0; /* Alinha à esquerda */
+    margin-right: 0; /* Alinha à esquerda */
+    position: relative;
+    left: 0; /* Remove qualquer centralização forçada */
+    min-height: 1000px; /* Garante uma altura mínima */
+}
+
+/* Títulos principais */
+.details h1 {
+    font-size: 2rem; /* Tamanho do título */
+    color: #333; /* Cor escura para o título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+/* Títulos de seções */
+.details h2 {
+    font-size: 1.5rem; /* Tamanho do subtítulo */
+    color: #333; /* Cor escura para os subtítulos */
+    margin-top: 20px; /* Espaço acima do subtítulo */
+    margin-bottom: 10px; /* Espaço abaixo do subtítulo */
+}
+
+/* Texto explicativo */
+.details p {
+    font-size: 1rem; /* Tamanho do texto */
+    color: #555; /* Cor do texto (um pouco mais clara que o título) */
+    line-height: 1.6; /* Espaçamento entre as linhas */
+    margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+}
+
+/* Estilizando as listas de ingredientes */
+.details ul {
+    list-style-type: none; /* Remove a numeração ou os marcadores */
+    padding-left: 0; /* Remove o recuo da lista */
+    margin-top: 10px; /* Adiciona espaçamento no topo da lista */
+}
+
+.details li {
+    font-size: 1rem; /* Tamanho da fonte dos itens da lista */
+    color: #350a34; /* Cor dos itens */
+    padding: 5px 0; /* Espaçamento entre os itens */
+}
+
+/* Detalhes do modo de preparo */
+.preparation {
+    background-color: #350a34; /* Fundo branco para a área de preparo */
+    padding: 30px; /* Aumentei o padding para dar mais espaço ao conteúdo */
+    margin-top: 20px; /* Espaçamento acima da seção de preparo */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05); /* Sombras mais suaves */
+}
+
+.preparation h2 {
+    font-size: 1.4rem; /* Tamanho do título da preparação */
+    color: #ffffff; /* Cor do título */
+}
+
+.preparation p {
+    font-size: 1rem; /* Tamanho do texto de preparo */
+    color: #ffffff; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre as linhas */
+    margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+}
+
+/* Adicionando um estilo para as divisões de ingredientes e preparo */
+.details .ingredients,
+.details .preparation {
+    margin-bottom: 20px; /* Espaço abaixo das seções de ingredientes e preparo */
+}
+
+/* Estilo de links (caso apareçam) */
+a {
+    color: #350a34; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+a:hover {
+    color: #333; /* Cor dos links ao passar o mouse */
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Adicionando um estilo para o rodapé */
+footer {
+    display: flex; /* Flexbox para o layout */
+    justify-content: center; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #350a34; /* Cor de fundo do rodapé */
+    color: #ffffff; /* Cor do texto no rodapé */
+    margin-top: 40px; /* Espaçamento acima do rodapé */
+}
+
+footer p {
+    font-size: 1rem; /* Tamanho do texto no rodapé */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .details {
+        padding: 20px; /* Menos espaço interno em telas menores */
+    }
+
+    .details h1 {
+        font-size: 1.5rem; /* Reduz o tamanho do título em telas menores */
+    }
+
+    .details h2 {
+        font-size: 1.2rem; /* Reduz o tamanho do subtítulo em telas menores */
+    }
+
+    .details p, .preparation p {
+        font-size: 0.9rem; /* Reduz o tamanho do texto em telas menores */
+
+    }
+    body {
+  overflow: hidden;
+}
+
+}
+/*comment by Gabriela*/
